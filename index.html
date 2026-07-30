@@ -1,182 +1,47 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Khôra — a research project towards a geomorphology of the Internet.">
-  <title>Khôra — Towards a Geomorphology of the Internet</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Khôra — archivio spaziale di materiali, idee e ricerche.">
+  <title>Khôra — Spatial Archive</title>
+  <link rel="stylesheet" href="radial.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Khôra, back to top">KHÔRA<span>°</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#introduction">Introduction</a>
-      <a href="#question">Question</a>
-      <a href="#methodology">Methodology</a>
-      <a href="#future">Future</a>
+  <header><a class="logo" href="#">KHÔRA<span>°</span></a><p id="coords">ORBIT / 000° &nbsp; TILT / 000°</p><button id="aboutBtn">ABOUT</button></header>
+  <main id="viewport">
+    <canvas id="space"></canvas>
+    <section class="intro">
+      <small>RESEARCH QUESTION / 001</small>
+      <h1>What is the<br>morphology<br>of the Internet?</h1>
+      <p class="second-question"><span>THEN / 002</span>How does it manifest?</p>
+    </section>
+    <div class="scene"><div id="world">
+      <section class="cluster ca" data-name="Channel Chasers"><div class="label"><small>REFERENCE / 01</small><h2>Channel Chasers</h2></div></section>
+      <div class="question-node" aria-hidden="true">
+        <small>ORIGIN / Q.01</small>
+        <strong>WHAT IS THE<br>MORPHOLOGY OF<br>THE INTERNET?</strong>
+        <span>HOW DOES IT MANIFEST? &rarr;</span>
+      </div>
+    </div></div>
+    <nav aria-label="Navigazione tra i cluster">
+      <button data-view="a" class="active"><span>01</span> CORE</button>
+      <button data-view="b"><span>02</span> PHYSICAL MANIFESTATION</button>
+      <button data-view="c"><span>03</span> MAP AND MATRIX</button>
+      <button data-view="d"><span>04</span> DIGITAL MANIFESTATION</button>
+      <button data-view="e"><span>05</span> GENERATIVE AND EPIGENETIC LANDSCAPE</button>
+      <button data-view="f"><span>06</span> THEORETICAL GROUND</button>
     </nav>
-    <span class="edition">Research / 2026</span>
-  </header>
-
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="terrain" aria-hidden="true">
-        <span class="contour contour-a"></span>
-        <span class="contour contour-b"></span>
-        <span class="contour contour-c"></span>
-        <span class="contour contour-d"></span>
-        <span class="terrain-label label-1">INFRASTRUCTURE</span>
-        <span class="terrain-label label-2">PROTOCOL</span>
-        <span class="terrain-label label-3">RELATION</span>
-        <i class="node node-a"></i><i class="node node-b"></i><i class="node node-c"></i>
-      </div>
-      <div class="hero-copy">
-        <p class="eyebrow">A research proposal exploring the Internet as territory through representation</p>
-        <h1 id="hero-title">Khôra</h1>
-        <p class="subtitle">Towards a Geomorphology<br>of the Internet</p>
-      </div>
-      <p class="hero-index">01—14<br>Spatial inquiry<br>Computational design</p>
-      <a class="scroll-cue" href="#introduction">Enter the territory <span>↓</span></a>
-    </section>
-
-    <section class="section" id="introduction">
-      <header class="section-label"><span>01</span><p>Introduction</p></header>
-      <div class="section-body">
-        <p class="lead">The Internet has become increasingly accessible while simultaneously becoming increasingly difficult to perceive.</p>
-        <div class="columns">
-          <p>Interfaces compress vast computational processes into seamless interactions, allowing users to navigate digital environments without confronting the infrastructures, protocols, algorithms, and relations that sustain them.</p>
-          <p>This simplification is a defining achievement of interface design. Yet contemporary interfaces may not simply conceal technological complexity; they may also reduce our ability to perceive the Internet as a spatial condition.</p>
-        </div>
-        <blockquote><span>Initial inquiry</span>If interfaces continuously abstract computation, what is left outside the interface?</blockquote>
-        <p class="closing">Rather than asking what the interface reveals, Khôra asks what it leaves behind.</p>
-      </div>
-    </section>
-
-    <section class="section dark" id="interface">
-      <header class="section-label"><span>02</span><p>The Interface</p></header>
-      <div class="section-body">
-        <p class="lead">Every interface performs an act of selection.</p>
-        <div class="columns">
-          <p>Only the elements necessary for interaction remain visible; everything else is abstracted from experience. This process may also remove the spatial relationships through which computation exists.</p>
-          <p>Protocols, servers, algorithms, energy systems, data centres, and information flows continue to operate, yet they are no longer experienced as components of a shared spatial condition.</p>
-        </div>
-        <div class="axioms"><p>The Internet becomes something we use</p><p>rather than somewhere we inhabit.</p></div>
-      </div>
-    </section>
-
-    <section class="section" id="problem">
-      <header class="section-label"><span>03</span><p>The Research Problem</p></header>
-      <div class="section-body">
-        <p class="lead">Existing research has expanded our understanding of digital technologies. Yet it often remains concerned with explaining systems.</p>
-        <div class="columns"><p>Researchers have revealed global infrastructures, exposed supply chains, analysed data flows, mapped networks, and described planetary computation.</p><p>Khôra asks whether interfaces have also transformed how the Internet can be perceived spatially—and what forms of inquiry might make computational space observable once again.</p></div>
-      </div>
-    </section>
-
-    <section class="section question" id="question">
-      <header class="section-label"><span>04</span><p>Research Question</p></header>
-      <div class="section-body">
-        <p class="lead">The Internet may be approached not only as a network or infrastructure, but also as a territorial condition.</p>
-        <blockquote><span>Central inquiry</span>Can the Internet be understood as a dynamic territory, and if so, what forms of representation might allow its continuously evolving spatial condition to be observed?</blockquote>
-        <p class="closing">The research investigates whether representation itself can function as a method of inquiry into computational space.</p>
-      </div>
-    </section>
-
-    <section class="section dark position" id="position">
-      <header class="section-label"><span>05</span><p>Conceptual Position</p></header>
-      <div class="section-body">
-        <p class="lead">A shift from <em>network thinking</em> towards <em>territorial thinking.</em></p>
-        <div class="split concept-split">
-          <div><p class="kicker">Begin with</p><h2>Processes</h2><p>Environments whose form emerges through continuous transformation.</p></div>
-          <div><p class="kicker">Investigate</p><h2>Morphologies</h2><p>The formation, evolution, and interaction of dynamic spatial systems.</p></div>
-        </div>
-        <p class="closing">Geomorphology is not a visual metaphor. It is a conceptual framework for approaching computational environments through processes rather than maps.</p>
-      </div>
-    </section>
-
-    <section class="section" id="name">
-      <header class="section-label"><span>06</span><p>Why Khôra?</p></header>
-      <div class="section-body">
-        <p class="lead">χώρα <em>khōra</em> — land, region, territory.</p>
-        <div class="columns"><p>In Plato's <em>Timaeus</em>, khôra describes a receptive condition through which forms may emerge without itself possessing a stable form.</p><p>The term is not a philosophical foundation or a claim that the Internet is a khôra. It evokes spatial conditions that resist fixed representation and whose morphology must be investigated.</p></div>
-        <blockquote><span>Orientation</span>Khôra names not the object of the research, but the space of inquiry itself.</blockquote>
-      </div>
-    </section>
-
-    <section class="section dark" id="community">
-      <header class="section-label"><span>07</span><p>Community of Practice</p></header>
-      <div class="section-body">
-        <p class="lead">Architecture, computational design, representation studies, media theory, and digital geography.</p>
-        <div class="thinkers">
-          <article><span>01</span><h3>James Corner</h3><p>Mapping actively constructs knowledge rather than documenting reality.</p></article>
-          <article><span>02</span><h3>Terra Forma</h3><p>Ecological relationships described beyond conventional cartography.</p></article>
-          <article><span>03</span><h3>Keller Easterling</h3><p>Infrastructure as active spatial organisation.</p></article>
-          <article><span>04</span><h3>Benjamin Bratton</h3><p>Planetary computation as geopolitical and spatial condition.</p></article>
-          <article><span>05</span><h3>Crawford &amp; Joler</h3><p>Drawing as critical research methodology.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section inquiry" id="observation">
-      <header class="section-label"><span>08</span><p>Representation as Observation</p></header>
-      <div class="section-body">
-        <p class="lead">Drawing becomes an instrument for producing new knowledge.</p>
-        <div class="columns"><p>Like Land Art, Khôra does not invent landscapes. It establishes new ways of perceiving territories that already exist.</p><p>Each drawing records only a temporary condition. Successive representations progressively construct an understanding of computational territory.</p></div>
-        <div class="axioms"><p>Landscape is not assumed.</p><p>It emerges through observation.</p></div>
-      </div>
-    </section>
-
-    <section class="section methods" id="methodology">
-      <header class="section-label"><span>09</span><p>Methodology</p></header>
-      <div class="section-body">
-        <p class="lead">Theoretical inquiry meets computational design through five interconnected stages.</p>
-        <ol class="stages">
-          <li><span>01</span><h3>Observation</h3><p>Identify phenomena that may describe territorial conditions.</p></li>
-          <li><span>02</span><h3>Collection</h3><p>Gather relational datasets across infrastructures, protocols, computation, resources, and flows.</p></li>
-          <li><span>03</span><h3>Translation</h3><p>Interpret computational relationships as spatial conditions rather than networks.</p></li>
-          <li><span>04</span><h3>Computation</h3><p>Develop procedural models generating dynamic spatial organisations.</p></li>
-          <li><span>05</span><h3>Representation</h3><p>Produce drawings that investigate morphology rather than simply visualise data.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section dark experiments" id="experiments">
-      <header class="section-label"><span>10</span><p>Computational Experiments</p></header>
-      <div class="section-body">
-        <p class="lead">Each experiment tests a different representational hypothesis.</p>
-        <ol class="experiment-list">
-          <li><span>EXP / 01</span><h3>Beyond the Interface</h3><p>Computational relationships abstracted by interfaces.</p></li>
-          <li><span>EXP / 02</span><h3>Relational Territories</h3><p>Computational fields beyond conventional network diagrams.</p></li>
-          <li><span>EXP / 03</span><h3>Geomorphological Translation</h3><p>How computational relations may generate spatial morphologies.</p></li>
-          <li><span>EXP / 04</span><h3>Dynamic Terrain</h3><p>Procedural representations evolving through changing datasets.</p></li>
-          <li><span>EXP / 05</span><h3>Living Atlas</h3><p>An evolving archive of computational territory.</p></li>
-        </ol>
-        <p class="closing narrow">These experiments function not as illustrations of theory but as mechanisms for producing theory.</p>
-      </div>
-    </section>
-
-    <section class="section" id="contribution">
-      <header class="section-label"><span>11</span><p>Expected Contribution</p></header>
-      <div class="section-body">
-        <p class="lead">Khôra does not seek to produce another map of the Internet.</p>
-        <div class="columns"><p>Nor does it attempt to reveal hidden infrastructures already documented elsewhere. Its contribution lies in opening a new research direction.</p><p>The project establishes a conceptual and methodological framework for asking whether territorial thinking and epistemic representation can make computational spatial conditions observable.</p></div>
-      </div>
-    </section>
-
-    <section class="outcomes" id="future">
-      <p class="eyebrow">12 / Future Development</p>
-      <h2>Living Atlas<br>of the Internet</h2>
-      <p>An evolving collection of observations through which computational territory gradually becomes legible.</p>
-    </section>
-
-    <section class="section dark hypothesis" id="hypothesis">
-      <header class="section-label"><span>13</span><p>Working Hypothesis</p></header>
-      <div class="section-body">
-        <blockquote><span>Working Hypothesis</span>Contemporary interfaces may have reduced our ability to perceive the Internet as a spatial condition. Rather than recovering hidden infrastructures, this research investigates whether representation can recover the possibility of thinking computational space as territory.</blockquote>
-      </div>
-    </section>
+    <div class="hint">↔ <span>DRAG TO ORBIT<br>SCROLL TO ZOOM</span></div>
   </main>
-
-  <footer><a class="wordmark" href="#top">KHÔRA<span>°</span></a><p>Towards a Geomorphology of the Internet</p><p>Research project / 2026</p></footer>
+  <aside id="detail">
+    <button class="close" aria-label="Chiudi">×</button>
+    <small class="code"></small>
+    <h2></h2>
+    <div class="detail-content"><p>Spazio riservato al contenuto. Qui potremo inserire testo, immagini, video, documenti o collegamenti relativi a ciascun materiale.</p></div>
+    <small class="detail-status">CONTENT / TO BE ADDED</small>
+  </aside>
+  <aside id="about"><small>KHÔRA / SPATIAL ARCHIVE</small><p>Un ambiente tridimensionale per esplorare materiali di ricerca organizzati in tre costellazioni. I contenuti mostrati sono segnaposto.</p><p>Mouse: trascina + rotella<br>Touch: trascina<br>Tastiera: frecce + / −</p></aside>
+  <script src="radial.js"></script>
 </body>
 </html>
