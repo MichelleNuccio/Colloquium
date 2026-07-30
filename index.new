@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Khôra — archivio spaziale di materiali, idee e ricerche.">
+  <title>Khôra — Spatial Archive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><a class="logo" href="#">KHÔRA<span>°</span></a><p id="coords">ORBIT / 000° &nbsp; TILT / 000°</p><button id="aboutBtn">ABOUT</button></header>
+  <main id="viewport">
+    <canvas id="space"></canvas>
+    <section class="intro"><small>A / 001—018</small><h1>Spatial<br>Archive</h1><p>Un territorio navigabile di materiali.<br>Trascina per orbitare.</p></section>
+    <div class="scene"><div id="world">
+      <section class="cluster ca" data-name="Field Notes"><div class="label"><small>01 / 03</small><h2>Field Notes</h2></div></section>
+      <section class="cluster cb" data-name="Relations"><div class="label"><small>02 / 03</small><h2>Relations</h2></div></section>
+      <section class="cluster cc" data-name="Prototypes"><div class="label"><small>03 / 03</small><h2>Prototypes</h2></div></section>
+    </div></div>
+    <nav><button data-view="a" class="active"><span>01</span> FIELD NOTES</button><button data-view="b"><span>02</span> RELATIONS</button><button data-view="c"><span>03</span> PROTOTYPES</button></nav>
+    <div class="hint">↔ <span>DRAG TO ORBIT<br>SCROLL TO ZOOM</span></div>
+  </main>
+  <aside id="detail"><button class="close" aria-label="Chiudi">×</button><small class="code"></small><h2></h2><p>Spazio riservato al contenuto. Qui potremo inserire testo, immagini, video, documenti o collegamenti relativi a ciascun materiale.</p><small>CONTENT / TO BE ADDED</small></aside>
+  <aside id="about"><small>KHÔRA / SPATIAL ARCHIVE</small><p>Un ambiente tridimensionale per esplorare materiali di ricerca organizzati in tre costellazioni. I contenuti mostrati sono segnaposto.</p><p>Mouse: trascina + rotella<br>Touch: trascina<br>Tastiera: frecce + / −</p></aside>
+  <script src="script.js"></script>
+</body>
+</html>
